@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            display: block;
+            padding: 5%;
+            border: 2px solid white;
+        }
+
+        input {
+            /* border: 2px solid black; */
+            padding: 10px;
+            font-size: 20px;
+            display: block;
+            width: 400px;
+            line-height: 20px;
+            margin: 3% auto auto 0.5px;
+        }
+
+        input:hover {
+            background-color: steelblue;
+            opacity: 0.35;
+            color: white;
+        }
+
+        div {
+            position: absolute;
+            margin: 10% auto auto 30%;
+            /* margin: 0.5% auto auto 35%; */
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .button {
+            width: 100px;
+            background-color: blueviolet;
+            border-radius: 8%;
+            margin-right: 90px;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            color: white;
+        }
+
+        #myVideo {
+            position: fixed;
+            width: max-content;
+            height: 100vh;
+        }
+        .button1{
+            float: right;
+            margin-top: -10%;
+            margin-left: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <video muted loop autoplay id="myVideo">
+        <source src="videos/Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div>
+        <form action="home.html">
+            <h3>Create Gmail Account</h3>
+            <input type="text" name="name" id="name" placeholder="Full Name" required minlength="4" maxlength="16">
+            <input type="text" name="contact" id="contact" placeholder="Contact Number" required>
+            <input type="email" name="email" id="email" placeholder="Enter mail id" required>
+            <input type="reset" value="Reset" class="button">
+            <input type="submit" value="Submit" class="button button1">
+        </form>
+    </div>
+
+</body>
+
+</html>
